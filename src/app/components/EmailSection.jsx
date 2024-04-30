@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import FacebookIcon from '../../../public/facebook-app-round-white-icon.webp'
+import Whatsapp from '../../../public/whatsapp-white-icon.png'
 import Link from "next/link";
 import Image from "next/image";
 
@@ -50,24 +52,25 @@ const EmailSection = () => {
                     I&apos;ll try my best to get back to you!
                 </p>
                 <div className="socials flex flex-row gap-2">
-                    <Link href="github.com">
+                    <Link href="https://github.com/itszaki01">
                         <Image src={GithubIcon} alt="Github Icon" />
                     </Link>
-                    <Link href="linkedin.com">
+                    <Link href="https://www.linkedin.com/in/zakaria-touil-789b91253/">
                         <Image src={LinkedinIcon} alt="Linkedin Icon" />
                     </Link>
                 </div>
             </div>
-            <div>
+            <div className='flex flex-col gap-2'>
                 <h1 className="text-2xl font-bold">Contact Me:</h1>
-                <div className="flex items-center">
-                    <Link href="linkedin.com">
-                        <Image src={LinkedinIcon} alt="Linkedin Icon" />
+                <div className="flex items-center gap-2">
+                    <Link href="https://www.facebook.com/profile.php?id=100077054029310">
+                        <Image width={40} src={FacebookIcon} alt="Facebook Icon" />
                     </Link>
-                    <Link href="linkedin.com">
-                        <Image src={LinkedinIcon} alt="Linkedin Icon" />
+                    <Link href="https://wa.me/213559388573">
+                        <Image width={40} src={Whatsapp} alt="Whatsapp Icon" />
                     </Link>
                 </div>
+                <p><span className="font-bold">Email:</span> <Link href={"email:contact@zakariatouil.tech"}>contact@zakariatouil.tech</Link></p>
             </div>
         </section>
     );
