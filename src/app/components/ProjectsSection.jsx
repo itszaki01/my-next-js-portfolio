@@ -7,55 +7,109 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
+    title: "Nest Js Ecommerce Store Service Providor With DNS Managment + Sub Domains",
+    description: "A very large-scale project consisting of an e-commerce store service provider for delivery companies' clients, integrating more than 5 external services through APIs",
+    image: "/images/projects/nestjs.png",
+    tag: ["All", "Back-End"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
+    title: "Nest Js Ecommerce Store (Refactored)",
+    description: "An intermediate project for an online store that includes all professional requirements such as categories, products, coupons, etc.",
+    image: "/images/projects/nestjs.png",
+    tag: ["All", "Back-End"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
+    title: "ExpressJs Ecommerce Store",
+    description: "An intermediate project for an online store that includes all professional requirements such as categories, products, coupons, etc.",
+    image: "/images/projects/express.png",
+    tag: ["All", "Back-End"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "MERN Stack Notes App",
+    description: "Notes App With CRUD operations",
+    image: "/images/projects/MernNotaty.png",
+    tag: ["All", "Back-End"],
+    gitUrl: "https://github.com/itszaki01/notaty-app-fullstack/tree/main",
+    previewUrl: "https://notaty-app-fullstack.vercel.app/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
+    title: "MERN Stack COD E-commerce Store",
+    description: "Admin Panel + CRUD operations",
+    image: "/images/projects/afflita.png",
+    tag: ["All", "Back-End"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
+    title: "React Firebase Ecommerce Application",
+    description: "An online store specializing in selling wristwatches that includes all the essential operations for a complete web application.",
+    image: "/images/projects/brandtime.png",
+    tag: ["All",],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 7,
+    title: "FrontEnd FakeGram App",
+    description: "Authentication and CRUD operations",
+    image: "/images/projects/fakegram.png",
+    tag: ["All"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 8,
+    title: "React Meals Chef App",
+    description: "LocalStorage CRUD operations & React Hook Form",
+    image: "/images/projects/mealschef.png",
+    tag: ["All"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 9,
+    title: "React Books Finder App",
+    description: "Google Api & React Query",
+    image: "/images/projects/booksfinder.png",
+    tag: ["All",],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 10,
+    title: "React Firebase Todos App",
+    description: "CRUD operations",
+    image: "/images/projects/todosfirebase.png",
+    tag: ["All"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 11,
+    title: "React Images && Quotes",
+    description: "API Intergration",
+    image: "/images/projects/quotsimage.png",
+    tag: ["All"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id:12,
+    title: "React Weather API",
+    description: "Api Integration With WeatherApi",
+    image: "/images/projects/weatherapp.png",
+    tag: ["All"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -92,13 +146,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Back-End"
+          isSelected={tag === "Back-End"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">

@@ -40,6 +40,8 @@ const HeroSection = () => {
                 1000,
                 "Linux Cli",
                 1000,
+                "Server Managment",
+                1000,
                 "Nginx",
                 1000,
                 "Apache Server",
@@ -49,6 +51,10 @@ const HeroSection = () => {
                 "VPS Hosting",
                 1000,
                 "Cpanel",
+                1000,
+                "Hestia Cp",
+                1000,
+                "Vesta Cp",
                 1000,
                 "Firewall",
                 1000,
@@ -69,12 +75,6 @@ const HeroSection = () => {
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-orange-400 to-orange-600 hover:bg-slate-200 text-white"
             >
               Hire Me
-            </Link>
-            <Link
-              href="/#contact"
-              className="px-6 mt-3 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-orange-400 to-orange-600 hover:bg-slate-200 text-white"
-            >
-              My Projects
             </Link>
             <Link
               href="/"

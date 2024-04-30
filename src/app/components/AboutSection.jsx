@@ -5,8 +5,22 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Skills",
-    id: "skills",
+    title: "Back-End Skills",
+    id: "back-end-skills",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>PostgreSQL</li>
+        <li>Sequelize</li>
+        <li>JavaScript</li>
+        <li>React</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Front-End Skills",
+    id: "front-end-skills",
     content: (
       <ul className="list-disc pl-2">
         <li>Node.js</li>
@@ -41,7 +55,7 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("back-end-skills");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -53,7 +67,7 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
+        <Image src="/images/about-image.png" width={500} height={500} alt="about-img" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
@@ -66,11 +80,11 @@ const AboutSection = () => {
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
+              selectTab={() => handleTabChange("back-end-skills")}
+              active={tab === "back-end-skills"}
             >
               {" "}
-              Skills{" "}
+              Back-End Skills{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
