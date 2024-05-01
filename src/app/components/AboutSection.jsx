@@ -5,30 +5,38 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Back-End Skills",
-    id: "back-end-skills",
+    title: "Back-End",
+    id: "back-end",
     content: (
       <ul className="list-disc pl-2">
+        <li>Problem Solving</li>
+        <li>TypeScript</li>
         <li>Node.js</li>
+        <li>Nest js</li>
         <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>Fastify</li>
+        <li>Linux</li>
+        <li>DNS Managment</li>
+        <li>Server Managment</li>
+        <li>Nginx Proxy</li>
+        <li>Apache Server</li>
+        <li>Hescia Cp</li>
+        <li>Vesta Cp</li>
       </ul>
     ),
   },
   {
-    title: "Front-End Skills",
-    id: "front-end-skills",
+    title: "Front-End",
+    id: "front-end",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
         <li>React</li>
+        <li>TypeScript</li>
+        <li>Redux</li>
+        <li>Tailwind Css</li>
+        <li>Custom Hooks</li>
+        <li>RTQ</li>
+        <li>MUI</li>
       </ul>
     ),
   },
@@ -37,25 +45,20 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Index Academy - Nest Js.</li>
+        <li>Ahmed Boghdady (Udemy) - Express Js.</li>
+        <li>Elzero Web Scholl - JS + TS.</li>
+        <li>Nouvil.net Academy - JS ,HTML, CSS.</li>
+        <li>Tarmeez Academy (Udemy) - React js.</li>
+        <li>Muhammad Naga (Codeawy Udemy) - React ,Next js, Tailwind.</li>
+        <li>Eman Alatawi Course (Udemy) - React js, Firebase.</li>
       </ul>
     ),
-  },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
-      </ul>
-    ),
-  },
+  }
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("back-end-skills");
+  const [tab, setTab] = useState("back-end");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -78,13 +81,21 @@ const AboutSection = () => {
             looking to expand my knowledge and skill set. I am a team player and
             I am excited to work with others to create amazing applications.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <p className="font-bold text-2xl mt-8">My Skills</p>
+          <div className="flex flex-row justify-start mt-2">
             <TabButton
-              selectTab={() => handleTabChange("back-end-skills")}
-              active={tab === "back-end-skills"}
+              selectTab={() => handleTabChange("back-end")}
+              active={tab === "back-end"}
             >
               {" "}
-              Back-End Skills{" "}
+              BackEnd{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("front-end")}
+              active={tab === "front-end"}
+            >
+              {" "}
+              FrontEnd{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
@@ -92,13 +103,6 @@ const AboutSection = () => {
             >
               {" "}
               Education{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              {" "}
-              Certifications{" "}
             </TabButton>
           </div>
           <div className="mt-8">
