@@ -18,7 +18,7 @@ const HeroSection = () => {
                     <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">Hello, I&apos;m </span>
                         <br></br>
-                        <TypeAnimation sequence={["Zakaria", 1000, "FullStack Developer", 1000]} wrapper="span" speed={50} repeat={Infinity} />
+                        <TypeAnimation sequence={["Zakaria", 1000, "Back-End Developer", 1000]} wrapper="span" speed={50} repeat={Infinity} />
                     </h1>
                     <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
                         {`I'm good at the front end but more than excellent at the back end`}
@@ -31,7 +31,7 @@ const HeroSection = () => {
                             Hire Me
                         </Link>
                         <Link
-                            href="https://drive.google.com/file/d/13aVcy3pjRPQPZkNtMpnVIYgkCLG2att_/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1quYRGxJ2aJ4na6fnJEFfCtw4CegGriym/view?usp=sharing"
                             target="_blank"
                             className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-orange-400 to-orange-600 hover:bg-slate-800 text-white mt-3"
                         >
