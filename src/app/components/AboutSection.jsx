@@ -15,9 +15,13 @@ const TAB_DATA = [
         <li>Nest js</li>
         <li>Express</li>
         <li>Fastify</li>
-        <li>Linux</li>
+        <li>Linux CLI</li>
+        <li>Ubuntu</li>
         <li>DNS Managment</li>
         <li>Server Managment</li>
+        <li>MongoDb Sharding</li>
+        <li>Socket.io</li>
+        <li>Redis Db</li>
         <li>Nginx Proxy</li>
         <li>Apache Server</li>
         <li>Hescia Cp</li>
