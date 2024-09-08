@@ -21,7 +21,7 @@ const HeroSection = () => {
                         <TypeAnimation sequence={["Zakaria", 1000, "Backend Developer", 1000]} wrapper="span" speed={50} repeat={Infinity} />
                     </h1>
                     <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                        {`I'm good at the front end but more than excellent at the back end`}
+                        {`I'm good at the front-end but more than excellent at the back-end`}
                     </p>
                     <div>
                         <Link
@@ -31,7 +31,7 @@ const HeroSection = () => {
                             Hire Me
                         </Link>
                         <Link
-                            href="https://drive.google.com/file/d/119yZXQ2-RS6WHqNLKvMA6P1XVZmePRCg/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1DYgI2NXq-S_LQ1d2xD6G4ZEccxmA71R-/view?usp=sharing"
                             target="_blank"
                             className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-orange-400 to-orange-600 hover:bg-slate-800 text-white mt-3"
                         >
