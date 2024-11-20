@@ -16,16 +16,14 @@ const TAB_DATA = [
         <li>Express</li>
         <li>Fastify</li>
         <li>Linux CLI</li>
+        <li>Ansible (Servers Managment)</li>
         <li>Ubuntu</li>
         <li>DNS Managment</li>
         <li>Server Managment</li>
         <li>MongoDb Sharding</li>
         <li>Socket.io</li>
-        <li>Redis Db</li>
+        <li>Redis</li>
         <li>Nginx Proxy</li>
-        <li>Apache Server</li>
-        <li>Hescia Cp</li>
-        <li>Vesta Cp</li>
       </ul>
     ),
   },
@@ -35,6 +33,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>React</li>
+        <li>Next.Js</li>
         <li>TypeScript</li>
         <li>Redux</li>
         <li>Tailwind Css</li>
